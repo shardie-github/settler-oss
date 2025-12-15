@@ -28,7 +28,7 @@ export default function ConsoleError({
     <div style={{ padding: '2rem', maxWidth: '600px', margin: '0 auto', textAlign: 'center' }}>
       <h2>Something went wrong</h2>
       <p style={{ marginTop: '1rem', color: '#666' }}>
-        We encountered an error loading the console. This has been logged and we'll investigate.
+        We encountered an error loading the console. This has been logged and we&apos;ll investigate.
       </p>
       {errorId && (
         <p style={{ marginTop: '1rem', fontSize: '0.9rem', color: '#999' }}>

@@ -17,7 +17,7 @@ export default function ProtocolPage() {
         <p>
           The Settler Protocol is an open-source API specification and set of SDKs 
           that enable financial reconciliation, transaction matching, and data synchronization. 
-          It's MIT licensed and can be freely used, modified, and self-hosted.
+          It&apos;s MIT licensed and can be freely used, modified, and self-hosted.
         </p>
 
         <h3 style={{ marginTop: '2rem' }}>Protocol Guarantees</h3>

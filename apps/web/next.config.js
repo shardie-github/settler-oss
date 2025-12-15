@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  transpilePackages: ['@settler/protocol', '@settler/shared'],
   // Ensure we don't accidentally bundle enterprise code
   webpack: (config, { isServer }) => {
     // Prevent importing enterprise package in web app
@@ -11,6 +10,8 @@ const nextConfig = {
     };
     return config;
   },
+  // Output configuration for Vercel
+  output: 'standalone',
 };
 
 module.exports = nextConfig;

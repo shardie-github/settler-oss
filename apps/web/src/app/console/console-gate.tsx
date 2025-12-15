@@ -79,7 +79,7 @@ export function ConsoleGate({ children }: ConsoleGateProps) {
       <div style={{ padding: '2rem', maxWidth: '600px', margin: '0 auto' }}>
         <h2>Console Temporarily Unavailable</h2>
         <p style={{ marginTop: '1rem', color: '#666' }}>
-          We're experiencing connectivity issues with the console service. 
+          We&apos;re experiencing connectivity issues with the console service. 
           Please try again in a few moments.
         </p>
         {errorId && (
