@@ -23,12 +23,23 @@ export default function DocsPage() {
       </section>
 
       <section style={{ marginTop: '3rem' }}>
-        <h2>Console Documentation (Licensed SaaS)</h2>
+        <h2>Self-Hosting</h2>
         <p style={{ marginTop: '0.5rem', color: '#666' }}>
-          Console documentation is available to licensed users. 
-          <Link href="/console" style={{ marginLeft: '0.5rem', color: '#0070f3' }}>
-            Access Console →
+          Learn how to self-host the Settler Protocol.
+          <Link href="/docs/self-hosting" style={{ marginLeft: '0.5rem', color: '#0070f3' }}>
+            Self-Hosting Guide →
           </Link>
+        </p>
+      </section>
+
+      <section style={{ marginTop: '3rem', padding: '1.5rem', background: '#f5f5f5', borderRadius: '8px' }}>
+        <h2>Console & Enterprise (Licensed SaaS)</h2>
+        <p style={{ marginTop: '0.5rem', color: '#666' }}>
+          Console and Enterprise features are deployed from a private repository and require 
+          a commercial license. For access, contact{' '}
+          <a href="mailto:sales@settler.dev" style={{ color: '#0070f3' }}>
+            sales@settler.dev
+          </a>
         </p>
       </section>
     </main>

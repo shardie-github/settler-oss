@@ -42,9 +42,9 @@ export default function PricingPage() {
             <li>Email support</li>
           </ul>
           <div style={{ marginTop: '1.5rem' }}>
-            <Link href="/console" style={{ color: '#0070f3', fontWeight: '500' }}>
-              Start Console Trial →
-            </Link>
+            <a href="mailto:sales@settler.dev" style={{ color: '#0070f3', fontWeight: '500' }}>
+              Contact Sales for Console Access →
+            </a>
           </div>
         </div>
 

@@ -8,6 +8,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { glob } from 'glob';
+import { promisify } from 'util';
 
 const FORBIDDEN_IMPORTS: Record<string, string[]> = {
   'packages/protocol': ['@settler/enterprise', 'apps/console'],
@@ -29,7 +30,8 @@ async function checkBoundaries() {
     }
 
     try {
-      const files = await glob(`${packagePath}/**/*.{ts,tsx}`, {
+      const pattern = path.join(packagePath, '**', '*.{ts,tsx}');
+      const files = await glob(pattern, {
         cwd: workspaceRoot,
         ignore: ['**/node_modules/**', '**/dist/**', '**/*.test.ts', '**/*.spec.ts'],
       });

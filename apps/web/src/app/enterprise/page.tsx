@@ -31,20 +31,31 @@ export default function EnterprisePage() {
         <Link href="/enterprise/instances">Instances</Link>
       </nav>
 
-      <section style={{ marginTop: '3rem' }}>
-        <a 
-          href="mailto:sales@settler.dev" 
-          style={{ 
-            padding: '0.75rem 1.5rem', 
-            background: '#0070f3', 
-            color: 'white', 
-            borderRadius: '4px', 
-            display: 'inline-block',
-            fontWeight: '500'
-          }}
-        >
-          Book Enterprise Demo
-        </a>
+      <section style={{ marginTop: '3rem', padding: '1.5rem', background: '#fff3cd', borderRadius: '8px', border: '1px solid #ffc107' }}>
+        <h3>Enterprise Deployment</h3>
+        <p style={{ marginTop: '0.5rem' }}>
+          <strong>Note:</strong> Enterprise features (dedicated instances, enterprise connectors) 
+          are deployed from a private repository and require a commercial license. 
+          This public repository contains only the open-source protocol.
+        </p>
+        <p style={{ marginTop: '1rem' }}>
+          For Enterprise features, please contact:
+        </p>
+        <p style={{ marginTop: '0.5rem' }}>
+          <a 
+            href="mailto:sales@settler.dev" 
+            style={{ 
+              padding: '0.75rem 1.5rem', 
+              background: '#0070f3', 
+              color: 'white', 
+              borderRadius: '4px', 
+              display: 'inline-block',
+              fontWeight: '500'
+            }}
+          >
+            Contact Sales
+          </a>
+        </p>
       </section>
     </main>
   );

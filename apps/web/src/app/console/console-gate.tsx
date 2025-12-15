@@ -1,7 +1,17 @@
 'use client';
 
 import { useState, useEffect, ReactNode } from 'react';
-import { generateCorrelationId, formatError } from '@settler/shared';
+// Helper functions (in production, these would come from @settler/shared)
+function generateCorrelationId(): string {
+  return `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+}
+
+function formatError(error: unknown): string {
+  if (error instanceof Error) {
+    return error.message;
+  }
+  return String(error);
+}
 
 interface ConsoleGateProps {
   children: ReactNode;

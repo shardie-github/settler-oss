@@ -1,7 +1,10 @@
 'use client';
 
 import { useEffect } from 'react';
-import { generateCorrelationId } from '@settler/shared';
+// Helper function (in production, this would come from @settler/shared)
+function generateCorrelationId(): string {
+  return `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+}
 
 export default function Error({
   error,

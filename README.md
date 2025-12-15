@@ -28,7 +28,12 @@
 
 ## 🎯 What is Settler?
 
-**Settler** provides powerful APIs and SDKs for **financial reconciliation**, **transaction matching**, and **data synchronization**. This repository contains the open-source SDKs and tools for integrating Settler into your applications.
+**Settler Protocol** is an open-source API specification and set of SDKs for **financial reconciliation**, **transaction matching**, and **data synchronization**. This repository contains the open-source protocol, SDKs, CLI tools, and documentation.
+
+### Protocol vs Console
+
+- **Protocol (OSS)** - Open-source SDKs, API specification, CLI tools, and examples. MIT licensed, self-hostable.
+- **Console (Licensed SaaS)** - Managed operations, enterprise connectors, multi-tenant administration. Deployed from private repository.
 
 ### ✨ Key Features
 
@@ -41,13 +46,31 @@
 - ⚡ **Fast** - Optimized for performance
 - 🌐 **Production Ready** - Battle-tested in production environments
 
-### 🏆 Why Choose Settler?
+### 🏆 Why Choose Settler Protocol?
 
-- ✅ **Open Source** - Transparent, community-driven development
+- ✅ **Open Source** - MIT licensed, transparent, community-driven development
+- ✅ **Self-Hostable** - Run your own protocol instance
 - ✅ **Well Documented** - Comprehensive guides and API reference
-- ✅ **Active Community** - Get help from developers worldwide
-- ✅ **Regular Updates** - Continuous improvements and new features
-- ✅ **Multiple SDKs** - Use your favorite programming language
+- ✅ **Multiple SDKs** - TypeScript, Python, Go, Ruby, React, and CLI
+- ✅ **Stable API** - Versioned protocol with semantic versioning
+- ✅ **Production Ready** - Battle-tested in production environments
+
+### What's OSS vs What's Paid?
+
+| Feature | Protocol (OSS) | Console (Licensed SaaS) |
+|---------|----------------|------------------------|
+| **License** | MIT | Proprietary |
+| **SDKs** | ✅ Free | ✅ Included |
+| **API Spec** | ✅ Free | ✅ Included |
+| **Self-Hosting** | ✅ Supported | ❌ Managed only |
+| **CLI Tool** | ✅ Free | ✅ Included |
+| **Managed Hosting** | ❌ | ✅ Paid |
+| **Enterprise Connectors** | ❌ | ✅ Paid |
+| **Multi-Tenant Admin** | ❌ | ✅ Paid |
+| **SSO/RBAC** | ❌ | ✅ Paid |
+| **Audit Logs** | ❌ | ✅ Paid |
+
+**Note**: Console and Enterprise features are deployed from a private repository. This public repository contains only the open-source protocol, SDKs, and CLI tools.
 
 ## 🚀 Quick Start
 
@@ -320,13 +343,27 @@ This repository is automatically synced from the private Settler repository. Con
 
 ## 📚 Documentation
 
-- 📖 [Full Documentation](https://docs.settler.dev) - Complete guides and API reference
-- 🚀 [Getting Started Guide](https://docs.settler.dev/getting-started) - Step-by-step setup
+### Protocol Documentation (OSS)
+
+- 📖 [Protocol Overview](./docs/BOUNDARY_MAP.md) - Understanding the protocol boundary
+- 🚀 [Getting Started](./GETTING_STARTED.md) - Step-by-step setup
 - 💡 [Examples](./examples) - Code examples and tutorials
+- 🔧 [SDK Documentation](./packages/sdk/README.md) - SDK usage guides
+- 📋 [Changelog](./CHANGELOG.md) - Release notes and updates
 - 🤝 [Contributing Guide](./CONTRIBUTING.md) - How to contribute
 - 🔒 [Security Policy](./SECURITY.md) - Security reporting
-- 📋 [Changelog](./CHANGELOG.md) - Release notes and updates
-- 🔄 [Auto-Sync Setup](./AUTO_SYNC_SETUP.md) - For maintainers
+
+### Self-Hosting Guide
+
+The Settler Protocol is open-source and can be self-hosted. See [Self-Hosting Guide](./docs/SELF_HOSTING.md) for deployment instructions.
+
+### Console & Enterprise (Licensed)
+
+Console and Enterprise features are available as licensed SaaS. For information about:
+- **Console**: Managed operations, multi-tenant administration, RBAC
+- **Enterprise**: Dedicated instances, enterprise connectors, data residency
+
+Contact [sales@settler.dev](mailto:sales@settler.dev) or visit the managed console (deployed from private repository).
 
 ## 🛠️ Development
 
